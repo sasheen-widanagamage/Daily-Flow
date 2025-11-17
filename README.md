@@ -61,9 +61,20 @@ Have ideas or feedback?
 
 📸 Screenshots
 
-<p align="center">
+<table>
+  <tr>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/1.png?raw=true" width="300"/></td>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/2.png?raw=true" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/3.png?raw=true" width="300"/></td>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/4.png?raw=true" width="300"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/5.png?raw=true" width="300"/></td>
+    <td><img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/6.png?raw=true" width="300"/></td>
+  </tr>
+</table>
 
-  <img src="[https://github.com/user-attachments/assets/d387cb8a-ddb3-4d66-9e90-6af513a9725d](https://github.com/sasheen-widanagamage/Daily-Flow/blob/4140b0ece8be7dda9b15384f88c49527fbabb6c5/1.png)" width="22%">
-  <img src="[https://github.com/user-attachments/assets/14d059c8-4775-4723-8300-b9ead1899293](https://github.com/sasheen-widanagamage/Daily-Flow/blob/f03bf80a248c2e297cb60f6b0d62b51e7523e603/2.png)" width="22%">
-  <img src="https://github.com/user-attachments/assets/626264eb-92ad-4fc5-a491-67d1efbdec45" width="22%">
-  <img src="https://github.com/user-attachments/assets/9b873c39-b6df-4a08-b7f4-bafcb8325eb5" width="22%"><br>
+
+
