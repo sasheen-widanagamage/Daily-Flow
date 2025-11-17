@@ -12,6 +12,7 @@ The app allows users to track daily habits, get hydration reminders, manage slee
 This project is built using Kotlin, Android Jetpack, Material Components, and local storage (SharedPreferences).
 
 ✨ Features
+
 🔹 Habit Tracking
 
 Add and manage habits like Drinking Water, Sleeping on Time, Study Sessions, Exercise, Meditation, and Journaling
@@ -85,4 +86,20 @@ Have ideas or feedback?
 📧 sasheenwidanagamage@gmail.com
 
 📸 Screenshots
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;"> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/1.png?raw=true" width="100%"/> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/2.png?raw=true" width="100%"/> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/3.png?raw=true" width="100%"/> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/4.png?raw=true" width="100%"/> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/5.png?raw=true" width="100%"/> <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/6.png?raw=true" width="100%"/> </div>
+
+
+<p float="left">
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/1.png?raw=true" width="45%" />
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/2.png?raw=true" width="45%" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/3.png?raw=true" width="45%" />
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/4.png?raw=true" width="45%" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/5.png?raw=true" width="45%" />
+  <img src="https://github.com/sasheen-widanagamage/Daily-Flow/blob/6168dff4e26e435f2d83a9c02910b13ce609824c/6.png?raw=true" width="45%" />
+</p>
+
