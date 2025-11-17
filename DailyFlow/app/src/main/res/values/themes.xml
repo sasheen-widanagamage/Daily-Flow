@@ -1,0 +1,38 @@
+<resources>
+    <!-- Single, always-dark theme -->
+    <style name="Theme.DailyFlow" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- palette -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorTertiary">@color/colorAccent</item>
+        <item name="colorOnTertiary">@color/colorOnAccent</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <!-- edge-to-edge colors only -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- dialogs -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.DailyFlow.AlertDialog</item>
+    </style>
+
+    <style name="ThemeOverlay.DailyFlow.AlertDialog"
+        parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorTextPrimary</item>
+    </style>
+
+    <!-- Keep this alias to satisfy any old references -->
+    <style name="Theme.Material3.NoActionBar" parent="Theme.Material3.Dark.NoActionBar" />
+
+    <!-- Fullscreen theme for alarm ring activity -->
+    <style name="Theme.DailyFlow.Fullscreen" parent="Theme.DailyFlow">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+</resources>

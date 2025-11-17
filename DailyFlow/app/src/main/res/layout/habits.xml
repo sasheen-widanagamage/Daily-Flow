@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseHabitRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dailyflow_gradient"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habits "
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="🔄"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <!-- 3x2 grid of habit options -->
+        <GridLayout
+            android:id="@+id/gridHabits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:useDefaultMargins="false">
+
+            <!-- Drink Water  -->
+            <LinearLayout
+                android:id="@+id/optDrink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:contentDescription="Drink Water"
+                    android:padding="14dp"
+                    android:src="@drawable/watericon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Drink Water "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- exercise  -->
+            <LinearLayout
+                android:id="@+id/optExercise"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="exercise"
+                    android:padding="14dp"
+                    android:src="@drawable/exerciseicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Exercise "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Sleep on Time 🛏 -->
+            <LinearLayout
+                android:id="@+id/optSleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="Sleep on Time"
+                    android:padding="14dp"
+                    android:src="@drawable/sleepicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Sleep on Time "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Study  -->
+            <LinearLayout
+                android:id="@+id/optStudy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="study"
+                    android:padding="14dp"
+                    android:src="@drawable/studyicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Study Session "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- meditate -->
+            <LinearLayout
+                android:id="@+id/optmeditate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="Meditate"
+                    android:padding="14dp"
+                    android:src="@drawable/meditateicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Meditate "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Journal -->
+            <LinearLayout
+                android:id="@+id/optJournal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_card_translucent"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/fg_option_ripple"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="Journal"
+                    android:padding="14dp"
+                    android:src="@drawable/journalicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Write in Journal "
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

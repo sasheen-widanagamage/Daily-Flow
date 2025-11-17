@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 60% Primary -->
+    <color name="colorPrimary">#0E1025</color>
+    <color name="colorPrimaryDark">#1B2A70</color>
+    <color name="colorOnPrimary">#246B9E</color>
+
+    <!-- 30% Secondary -->
+    <color name="colorSecondary">#334147</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- 10% Accent -->
+    <color name="colorAccent">#3F555D</color>
+    <color name="colorOnAccent">#FFFFFF</color>
+
+    <!-- Neutral background & text -->
+    <color name="colorBackground">#2B46D3</color>
+    <color name="colorSurface">#172666</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#9CA7AF</color>
+
+
+    <color name="colorBackground_dim_50">#2B46D3</color>  <!-- 50% of #223B43 -->
+    <color name="stroke_dim_20">#172666</color>          <!-- 20% black -->
+    <color name="colorSurface_dim_60">#992A3335</color>
+</resources>

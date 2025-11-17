@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dailyflow">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+
+    <application
+        android:name=".app.DailyFlowApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DailyFlow"
+        android:theme="@style/Theme.DailyFlow">
+
+        <!-- Splash / Launcher -->
+        <activity
+            android:name=".ui.onboarding.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DailyFlow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Onboarding screens -->
+        <activity android:name=".ui.onboarding.Onboarding1Activity"/>
+        <activity android:name=".ui.onboarding.Onboarding2Activity"/>
+        <activity android:name=".ui.onboarding.Onboarding3Activity"/>
+        <activity android:name=".ui.onboarding.Onboarding5Activity"/>
+        <activity android:name=".ui.onboarding.Onboarding6Activity"/>
+        <activity android:name=".ui.onboarding.Onboarding4Activity"/>
+
+        <!-- Auth -->
+        <activity android:name=".ui.auth.CreateAccountActivity"/>
+        <activity android:name=".ui.auth.LoginActivity"/>
+
+        <!-- Main (Fragments + BottomNav) -->
+        <activity android:name=".ui.MainActivity"/>
+
+        <!-- Permission Gate -->
+        <activity android:name=".ui.auth.PermissionGateActivity"/>
+
+        <!-- Alarm Ring Activity -->
+        <activity 
+            android:name=".ui.alarm.AlarmRingActivity"
+            android:exported="false"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:theme="@style/Theme.DailyFlow.Fullscreen"/>
+
+        <!-- Info screens -->
+        <activity android:name=".ui.more.AboutActivity"/>
+        <activity android:name=".ui.more.PrivacyActivity"/>
+
+        <!-- Receivers for alarms -->
+        <receiver android:name=".alarm.HydrationReceiver" android:exported="false"/>
+        <receiver android:name=".alarm.SleepAlarmReceiver" android:exported="false"/>
+        <receiver android:name=".alarm.TimerReceiver" android:exported="false"/>
+        <receiver android:name=".alarm.AlarmReceiver" android:exported="false"/>
+        <receiver android:name=".alarm.AlarmStopReceiver" android:exported="false"/>
+        <receiver android:name=".alarm.BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Home-screen widget -->
+        <receiver
+            android:name=".widget.HabitWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/habit_widget_info"/>
+        </receiver>
+    </application>
+</manifest>

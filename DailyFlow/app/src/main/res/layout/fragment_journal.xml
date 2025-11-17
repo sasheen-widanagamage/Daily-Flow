@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dailyflow_gradient">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <include layout="@layout/include_topbar_back" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Journal and Mood"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <!-- Mood selector -->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/j1" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/colorSurface_dim_60"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/colorSecondary"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_translucent"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mood For The Day"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/chipGroupMood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:chipSpacingHorizontal="8dp"
+                            app:chipSpacingVertical="8dp"
+                            app:selectionRequired="false"
+                            app:singleLine="true"
+                            app:singleSelection="true">
+
+                            <!-- 😊 Happy -->
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipHappy"
+                                style="@style/ChipEmojiStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="10dp"
+                                android:minWidth="40dp"
+                                android:minHeight="40dp"
+                                android:text="😊"
+                                android:textSize="28sp"
+                                app:checkedIconVisible="false" />
+
+                            <!-- 😌 Calm -->
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipCalm"
+                                style="@style/ChipEmojiStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="40dp"
+                                android:minHeight="40dp"
+                                android:text="😌"
+                                android:textSize="28sp"
+                                app:checkedIconVisible="false" />
+
+                            <!-- 🙂 Neutral -->
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipNeutral"
+                                style="@style/ChipEmojiStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:minWidth="40dp"
+                                android:minHeight="40dp"
+                                android:text="🙂"
+                                android:textSize="28sp"
+                                app:checkedIconVisible="false" />
+
+                            <!-- 😕 Sad -->
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipSad"
+                                style="@style/ChipEmojiStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minWidth="40dp"
+                                android:minHeight="40dp"
+                                android:text="😕"
+                                android:textSize="28sp"
+                                app:checkedIconVisible="false" />
+
+                            <!-- 😠 Angry -->
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAngry"
+                                style="@style/ChipEmojiStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:minWidth="40dp"
+                                android:minHeight="40dp"
+                                android:text="😠"
+                                android:textSize="28sp"
+                                app:checkedIconVisible="false" />
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Journal editor -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/colorSurface_dim_60"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/colorSecondary"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_translucent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Write Your Journal"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Write..…">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etJournal"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:gravity="top|start"
+                                android:inputType="textMultiLine"
+                                android:maxLines="6"
+                                android:overScrollMode="always" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- Actions -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnClear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clear"
+                                android:textColor="@color/colorOnAccent"
+                                app:backgroundTint="@color/colorOnPrimary"/>
+
+                            <Space
+                                android:layout_width="8dp"
+                                android:layout_height="1dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnSaveUpdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Save"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBackground"
+                                app:backgroundTint="@color/colorOnAccent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- History title -->
+
+                <!-- History list (journal + mood for the selected date) -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="16dp"
+                    app:cardBackgroundColor="@color/colorSurface_dim_60"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/colorSecondary"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_card_translucent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvSelectedDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Select Date"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <CalendarView
+                            android:id="@+id/calendarView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dateTextAppearance="@android:style/TextAppearance.Material.Body1"
+                            android:firstDayOfWeek="2"
+                            android:weekDayTextAppearance="@android:style/TextAppearance.Material.Body2" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="16dp"
+                    app:cardBackgroundColor="@color/colorSurface_dim_60"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/colorSecondary"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_card_translucent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:padding="16dp"
+                            android:text="Your Journal For The Day"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvJournalHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:nestedScrollingEnabled="false"
+                            android:overScrollMode="never"
+                            android:padding="16dp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
