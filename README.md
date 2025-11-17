@@ -60,4 +60,4 @@ Have ideas or feedback?
 📧 Email: sasheenwidanagamage@gmail.com
 
 📸 Screenshots
-
+https://github.com/sasheen-widanagamage/Daily-Flow/blob/4140b0ece8be7dda9b15384f88c49527fbabb6c5/1.png
